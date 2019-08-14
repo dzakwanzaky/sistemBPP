@@ -9,11 +9,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <title>AdminLTE 3 | Starter</title>
+  <title>Manajemen Gudang</title>
 
   <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="{{ asset('/lte/plugins/fontawesome-free/all.min.css') }}">
-  <link rel="stylesheet" href="{{ asset('/lte/plugins/fontawesome-free/all.css') }}">
+  <link rel="stylesheet" href="{{ asset('/lte/plugins/fontawesome-free/css/all.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('/lte/plugins/fontawesome-free/css/all.css') }}">
+  <!-- DataTable -->  
+  <link rel="stylesheet" href="{{ asset('/lte/plugins/datatables/dataTables.bootstrap4.css') }}">
   <!-- Theme style -->
   <link rel="stylesheet" href="{{ asset('/lte/dist/css/adminlte.min.css') }}">
   <!-- Google Font: Source Sans Pro -->
@@ -64,5 +66,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <script src="{{ asset('/lte/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 <!-- AdminLTE App -->
 <script src="{{ asset('/lte/dist/js/adminlte.min.js') }}"></script>
+<!-- DataTables -->
+<script src="{{ asset('/lte/plugins/datatables/jquery.dataTables.js') }}"></script>
+<script src="{{ asset('/lte/plugins/datatables/dataTables.bootstrap4.js') }}"></script>
+@yield('sweet')
 </body>
 </html>

@@ -15,4 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/stokbuku', function () {
+    return view('Admin.databuku');
+});
+
 Route::get('/admin', 'AdminController@index');
+
+Route::resource('databuku', 'BukuController');
+
