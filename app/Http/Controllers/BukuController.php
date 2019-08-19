@@ -18,6 +18,12 @@ class BukuController extends Controller
         return view('Admin.databuku', compact('data'));
     }
 
+    public function stok()
+    {
+        $data = ModelBuku::all();
+        return view('Admin.stokbuku', compact('data'));
+    }
+
     /**
      * Show the form for creating a new resource.
      *

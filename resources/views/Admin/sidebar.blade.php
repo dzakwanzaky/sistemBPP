@@ -31,14 +31,15 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/databuku" class="nav-link active" {{ Request::segment(1) === 'databuku' ? 'nav-link active' : null }}
-                {{ Request::segment(1) === 'databuku' ? 'nav-link active' : null }}>
+                <a href="/databuku" class="nav-link {{ Request::segment(1) === 'databuku' ? 'nav-link active' : null }}
+                {{ Request::segment(1) === 'databuku' ? 'nav-link active' : null }}">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Data Buku</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/stokbuku" class="nav-link">
+                <a href="/stokbuku" class="nav-link {{ Request::segment(1) === 'stokbuku' ? 'nav-link active' : null }}
+                {{ Request::segment(1) === 'stokbuku' ? 'nav-link active' : null }}">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Stok Buku</p>
                 </a>

@@ -20,7 +20,6 @@
                 <tr class="table-secondary" style="text-align:center; text-transform: uppercase">
                   <th>No.</th>
                   <th>Judul</th>
-                  <th>Penulis</th>
                   <th>Stok</th>
                   <th>Aksi</th>
                </tr>
@@ -31,7 +30,6 @@
                   <tr style="text-transform: uppercase">
                       <td>{{ $no++ }}</td>
                       <td>{{ $d->judul }}</td>
-                      <td>{{ $d->penulis }}</td>
                       <td>{{ $d->stok }}</td>
                       <td>
                           <a href="{{route('databuku.show',$d->id)}}" class="btn btn-sm btn-primary">Detail</a>
