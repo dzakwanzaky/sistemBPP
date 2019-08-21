@@ -14,10 +14,19 @@ class CreateModelBukusTable extends Migration
     public function up()
     {
         Schema::create('model_bukus', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->string('judul');
+            $table->string('id');
+            $table->string('judul_buku');
             $table->string('penulis');
-            $table->string('stok');
+            $table->string('price');
+            $table->string('isbn');
+            $table->string('cetakan');
+            $table->string('tebal');
+            $table->string('ukuran');
+            $table->string('berat');
+            $table->string('tanggal');
+            $table->string('ketersediaan');
+            $table->string('bahasa');
+            $table->string('kategori');
             $table->timestamps();
         });
     }

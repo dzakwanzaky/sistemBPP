@@ -8,7 +8,6 @@ class ModelBuku extends Model
 {
     protected $table = "model_bukus";
 
-    protected $fillable = [
-        'judul' , 'penulis' , 'stok'
-    ];
+    public $incrementing = false;
+
 }

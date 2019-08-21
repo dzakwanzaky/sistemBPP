@@ -18,10 +18,18 @@
             <table class="table table-bordered table-striped table-responsive-sm" id="databuku"> 
               <thead>
                 <tr class="table-secondary" style="text-align:center; text-transform: uppercase">
-                  <th>No.</th>
+                  <th>No</th>
                   <th>Judul</th>
                   <th>Penulis</th>
-                  <th>Stok</th>
+                  {{-- <th>Price</th>
+                  <th>ISBN</th>
+                  <th>Cetakan</th>
+                  <th>Ukuran</th>
+                  <th>Berat</th>
+                  <th>Tanggal</th> --}}
+                  <th>Ketersediaan</th>
+                  {{-- <th>Bahasa</th>
+                  <th>Kategori</th> --}}
                   <th>Aksi</th>
                </tr>
               </thead>
@@ -29,10 +37,19 @@
               @php $no = 1; @endphp
                 @foreach($data as $d)
                   <tr style="text-transform: uppercase">
-                      <td>{{ $no++ }}</td>
-                      <td>{{ $d->judul }}</td>
+                      <td>{{ $d->id }}</td>
+                      <td>{{ $d->judul_buku }}</td>
                       <td>{{ $d->penulis }}</td>
-                      <td>{{ $d->stok }}</td>
+                      {{-- <td>{{ $d->price }}</td>
+                      <td>{{ $d->isbn }}</td>
+                      <td>{{ $d->cetakan }}</td>
+                      <td>{{ $d->ukuran }}</td>
+                      <td>{{ $d->berat }}</td>
+                      <td>{{ $d->tanggal }}</td> --}}
+                      <td>{{ $d->ketersediaan }}</td>
+                      {{-- <td>{{ $d->bahasa }}</td>
+                      <td>{{ $d->kategori }}</td> --}}
+
                       <td>
                           <a href="{{route('databuku.show',$d->id)}}" class="btn btn-sm btn-primary">Detail</a>
                       </td>
