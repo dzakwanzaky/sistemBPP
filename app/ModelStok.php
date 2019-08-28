@@ -8,4 +8,7 @@ class ModelStok extends Model
 {
     protected $table = "model_stoks";
 
+    public $incrementing = false;
+
+
 }

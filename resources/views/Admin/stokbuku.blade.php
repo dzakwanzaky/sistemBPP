@@ -28,9 +28,9 @@
               @php $no = 1; @endphp
                 @foreach($data as $d)
                   <tr style="text-transform: uppercase">
-                      <td>{{ $no++ }}</td>
+                      <td>{{ $d->id }}</td>
                       <td>{{ $d->judul }}</td>
-                      <td>{{ $d->stok }}</td>
+                      <td>{{ $d->stok }}</td>                    
                       <td>
                           <a href="{{route('databuku.show',$d->id)}}" class="btn btn-sm btn-primary">Detail</a>
                       </td>

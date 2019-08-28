@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\ModelBuku;
+use App\ModelStok;
 
 class BukuController extends Controller
 {
@@ -20,7 +21,7 @@ class BukuController extends Controller
 
     public function stok()
     {
-        $data = ModelBuku::all();
+        $data = ModelStok::all();
         return view('Admin.stokbuku', compact('data'));
     }
 
@@ -56,6 +57,8 @@ class BukuController extends Controller
         $data = ModelBuku::where('id','=',$id)->get();
         return view('Admin.detailbuku', compact('data'));    
     }
+
+    
 
     /**
      * Show the form for editing the specified resource.
